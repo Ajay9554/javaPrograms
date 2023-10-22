@@ -1,0 +1,16 @@
+const loginForm = document.getElementById("login-form");
+
+loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // You can add your login validation logic here.
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // Example: Check if username and password are valid
+    if (username === "user" && password === "password") {
+        alert("Login successful!");
+    } else {
+        alert("Invalid credentials. Please try again.");
+    }
+});
